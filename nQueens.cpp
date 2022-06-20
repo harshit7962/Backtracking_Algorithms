@@ -24,7 +24,7 @@ bool isSafe(int row, int col, int n, vector<vector<int>> board) {
     //Lower Left Diagonal
     i=row, j=col;
     while(i<n && j>=0) {
-        if(board[i][j]) return true;
+        if(board[i][j]) return false;
         i++;
         j--;
     }
